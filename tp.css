@@ -1,0 +1,142 @@
+body {
+    background-color: #E8D9CD;
+    margin: auto;
+}
+.navbar {
+	background-color: #223030;
+	overflow: hidden;
+}
+.navbar a {
+  float: left;
+  color: #EFEFE9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+	background-color: #959D90;
+	color: #523D35;
+}
+hr{
+	border: 3px solid #523D35;
+}
+.header {
+    background-color: #959D90;
+    height: 110px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+	font-family: georgia;
+    margin-top: 0;
+    padding-top: 19px;
+}
+
+.container {
+    border: 8px solid #523D35;
+	background-color: #BBA58F;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.box {
+    display: inline-block;
+    border: 5px solid #523D35;
+    padding: 1rem;
+    vertical-align: middle;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.member {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.overlay_ko {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+    color: #EFEFE9;
+	font-family: garamond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.overlay_ko a {
+    display: inline-block;
+	color: #EFEFE9;
+    margin: 0 10px;
+    font-size: 24px;
+}
+.icon-container {
+    display: flex; 
+    justify-content: center;
+    margin-top: 10px;
+	background: transparent;
+}
+a{
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: green;
+}
+.overlay_ko:hover > * {
+    transform: translateY(20px);
+    transition: 0.5s;
+}
+.member:hover .overlay_ko {
+    opacity: 1;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 16px;
+    margin-top: 0.25em;
+}
+.merch{
+  max-width: 300px;
+  height: 300px;
+}
+input {
+  border-radius: 7px;
+  width:50px;
+
+  padding-left: 50px;
+  padding-top: 5px;
+}
+/*
+* - universal selector
+p h1 - element selector
+#id .class - descendant combinator
+#id > .class - inner child selector
+a:hover - pseudo-class selector
+
+h1, p, h2 - group selector
+*/
