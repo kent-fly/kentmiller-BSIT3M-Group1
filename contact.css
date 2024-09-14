@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #E8D9CD; 
+  margin: auto;
+}
+.navbar {
+background-color: #223030;
+overflow: hidden;
+}
+.navbar a {
+float: left;
+color: #EFEFE9;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+.navbar a:hover {
+background-color: #959D90;
+color: #523D35;
+}
+
+hr{
+border: 3px solid #523D35;
+}
+
+.header {
+  background-color: #959D90;
+  width: 100%;
+  padding: 20px;
+  min-height: 110px;
+  margin-bottom: 2rem;
+}
+
+.header > * {
+  text-align: center; 
+  margin: 0 auto;
+  padding-top: 10px; 
+}
+
+h1 {
+  text-align: center;
+  font-family: georgia;
+  margin-top: 0;
+  padding-top: 19px;
+}
+
+.container {
+  border: 8px solid #523D35;
+  background-color: #BBA58F;
+  margin: 0 1rem 2rem 0; 
+  font-size: 20px;
+  text-align: left;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
+  max-width: 600px; 
+  width: 60%;
+}
+
+h2{
+	text-align: center;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 2rem auto;
+	max-width: 1500px;
+    flex-direction: row;
+}
+
+.response-box {
+	background-color: #EFEFE9;
+	border: 2px solid #523D35;
+	border-radius: 10px;
+	padding: 1rem;
+	margin-left: 1rem;
+	flex-grow: 1;
+	height: fit-content;
+}
+.response-box h2 {
+	color: #223030;
+}
+
+input, textarea {
+	min-height: 2em;
+	border: 1px solid #260D0E;
+	font-size: 18px;
+	margin: 0.5rem 0;
+	width: calc(100% - 2em);
+	background-color: #EADDCA;
+	color: black;
+}
+input[type="submit"] {
+	background-color: #223030;
+	color: #EFEFE9;
+	border: none;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background-color: #959D90;
+}
+hr {
+	border: 5px solid #523D35;
+}
+footer {
+	text-align: center;
+	padding: 1rem;
+	background-color: #223030;
+	color: #EFEFE9;
+    clear: both;
+}
+.title, p{
+	font-size: 20px;
+}
+
+.icon-container {
+  display: flex; 
+  justify-content: center;
+  margin-top: 10px;
+background: transparent;
+}
+
+a{
+color: white;
+}
+a:visited {
+color: white;
+}
+a:hover {
+color: green;
+}
+
+
+/*
+
+* - universal selector
+p h1 - element selector
+#id .class - descendant combinator
+#id > .class - inner child selector
+a:hover - pseudo-class selector
+
+h1, p, h2 - group selector
+*/
