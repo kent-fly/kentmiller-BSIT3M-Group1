@@ -26,6 +26,9 @@
 			$user = $result->fetch_assoc();
 			$_SESSION['user_id'] = $user['id'];
 			$_SESSION['token'] = bin2hex(random_bytes(32));
+			
+			setcookie('user_id', $user['id'], time() + (86400 * 30), "/");
+			setcookie('email', $email, time() + (86400 * 30), "/");   
 
 			echo json_encode(array('success' => true, 'token' => $_SESSION['token']));
 		} else {
